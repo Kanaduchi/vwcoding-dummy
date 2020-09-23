@@ -1,0 +1,67 @@
+# Project information
+site_name: Кодирование автомобилей VAG
+site_description: Основные настройки различных платформ концерна VAG
+site_author: Andrey Topchiy
+site_url: http://www.vwcoding.ru
+
+# Repository
+repo_name: Kanaduchi/vwcoding
+repo_url: https://github.com/Kanaduchi/vwcoding
+edit_uri: https://github.com/Kanaduchi/vwcoding/edit/master/docs/
+
+# Copyright
+copyright: Copyright &copy; 2020 - Andrey Topchiy
+
+# Main directory
+docs_dir: docs/
+
+nav:
+  - Главная страница: index.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: assets/logo.png
+  palette:
+    scheme: preference
+  highlightjs: false
+  language: ru
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/logo.png
+  # 404 page
+  static_templates:
+    - 404.html
+
+extra_css:
+  - assets/custom.css
+
+markdown_extensions:
+  - meta
+  - markdown.extensions.admonition
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed
